@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-image:
+    linear-gradient(rgb(12, 133, 153, 0.9)), url("assets/img/img-bg.png");
+  background-size: cover;
+}
+
+.hero-content {
+  height: 100%;
+  margin: 0 15%;
+  position: relative;
+  /*   display: grid;
+  grid-template-columns: 1fr; */
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 40%;
+
+  transform: translate(0%, -40%);
+  width: 80%;
+
+  line-height: 1.05;
+}
+
+.hero-my-name {
+  color: #22b8cf;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-heading {
+  color: #f1f3f5;
+  font-size: 6.2rem;
+  letter-spacing: -0.1rem;
+}
+
+.hero-heading span {
+  color: #b7ff8b;
+}
+
+.hero-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 7%;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #96f2d7;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #b7ff8b;
+}
+
+.btn--retangle {
+  padding: 0.8rem 1.6rem;
+}
+
+.btn--square {
+  padding: 0.8rem;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.4rem;
+  color: #0c8599;
+}
+
+.btn-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+/* PROJECTS */
+
+.projects {
+  background-color: #96f2d7;
+  height: 100vh;
+}
