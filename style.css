@@ -10,6 +10,11 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #96f2d7;
+}
+
+section {
+  margin-bottom: 4.8rem;
 }
 
 .hero {
@@ -122,9 +127,17 @@ body {
   grid-template-columns: 100%;
 }
 
+.projects-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
 .project-card {
   background-color: #0c8599;
-  min-height: 30rem;
+  /*   min-height: 30rem; */
+  height: 80%;
   width: 30rem;
   border-radius: 10px;
   position: relative;
@@ -147,12 +160,18 @@ body {
   box-shadow: 0 1.2rem #075664;
 }
 
+.project-card:hover .project-img {
+  transform: translate(-50%, -54%);
+  filter: drop-shadow(0 0.4rem 3px rgba(73, 80, 87, 0.3));
+}
+
 .project-img {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 150px;
   justify-self: center;
+  transition: all 0.3s;
 }
 
 .project-logo {
@@ -164,13 +183,6 @@ body {
   letter-spacing: 0.05rem;
   line-height: 1.3;
   color: #dee2e6;
-}
-
-.projects-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.4rem;
 }
 
 .project-card footer {
@@ -196,6 +208,11 @@ body {
   color: #e8b1e8;
 }
 
+.cint .tag {
+  background-color: #293d3f;
+  color: #91c9b5;
+}
+
 .dark--btn {
   color: #22b8cf;
   font-weight: 600;
@@ -212,4 +229,79 @@ body {
 
 .project-github {
   background-color: transparent;
+}
+
+.services {
+  background-color: #96f2d7;
+  height: 100vh;
+  display: grid;
+}
+
+.services-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.service {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+  border: 3px solid #0c8599;
+  border-radius: 10px;
+
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.3;
+
+  position: relative;
+
+  align-self: flex-start;
+  justify-self: center;
+
+  transition: all 0.35s;
+}
+
+.service:hover {
+  background-color: rgba(12, 132, 153, 0.35);
+}
+
+.service:hover .service-icon {
+  fill: #96f2d7;
+}
+
+.srvc--right {
+  flex-direction: row-reverse;
+}
+
+.service-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #0c8599;
+  position: absolute;
+}
+
+.service-icon {
+  fill: #f1f3f5;
+  height: 3.2rem;
+  width: 3.2rem;
+  transition: all 0.3s;
+}
+
+.srvc--icon--box--right {
+  transform: translateX(50%);
+}
+
+.srvc--icon--box--left {
+  transform: translateX(-50%);
+}
+
+.service-text {
+  padding: 2.4rem 4.8rem;
+  color: #495057;
+  font-weight: 600;
 }
