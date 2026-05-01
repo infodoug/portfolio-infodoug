@@ -331,4 +331,62 @@ section:not(:last-child) {
 .technologies {
   height: 100vh;
   background-color: #0c8599;
+  display: grid;
+}
+
+.tech-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+  height: 80%;
+  width: 60%;
+  /* margin-top: 3%; */
+  justify-self: center;
+}
+
+.tech-box {
+  border: 3px solid #1b9cb2;
+  border-radius: 10px;
+  height: 12.8rem;
+  width: 12.8rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  justify-self: center;
+}
+
+.tech-img-box {
+  background-color: #1b9cb2;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+  justify-self: center;
+}
+
+.tech-img-box i {
+  color: #b7ff8b;
+  font-size: 3.2rem;
+}
+
+.tech-name {
+  color: #dee2e6;
+  font-size: 1.6rem;
+  font-weight: 600;
+  justify-self: center;
+}
+
+.tech-box:hover {
+  border: 3px solid #b7ff8b;
+}
+
+.tech-box:hover .tech-img-box {
+  background-color: #b7ff8b;
+}
+
+.tech-box:hover .tech-img-box i {
+  color: #22b8cf;
 }
