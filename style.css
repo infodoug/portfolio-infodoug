@@ -175,7 +175,23 @@ section:not(:last-child) {
   transform: translate(-50%, -50%);
   height: 150px;
   justify-self: center;
-  transition: all 0.3s;
+  transition: all 0.8s;
+}
+
+.project-img--1 {
+  left: 55%;
+  top: 3%;
+}
+
+.project-card:hover .project-img--1 {
+  left: 50%;
+  top: 0%;
+}
+
+.project-card:hover .project-img--2 {
+  left: 55%;
+  top: 3%;
+  z-index: 1;
 }
 
 .project-logo {
