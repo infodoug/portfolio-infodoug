@@ -13,7 +13,7 @@ body {
   background-color: #96f2d7;
 }
 
-section {
+section:not(:last-child) {
   margin-bottom: 4.8rem;
 }
 
@@ -114,6 +114,10 @@ section {
   text-align: center;
   color: #495057;
   padding-top: 1.6rem;
+}
+
+.section-title--light {
+  color: #96f2d7;
 }
 
 .projects {
@@ -304,4 +308,11 @@ section {
   padding: 2.4rem 4.8rem;
   color: #495057;
   font-weight: 600;
+}
+
+/* technologies */
+
+.technologies {
+  height: 100vh;
+  background-color: #0c8599;
 }
