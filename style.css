@@ -439,4 +439,8 @@ section:not(:last-child) {
   .hero-buttons {
     margin-bottom: 9.6rem;
   }
+
+  .hero-content {
+    margin: 0 3%;
+  }
 }
