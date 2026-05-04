@@ -408,3 +408,27 @@ section:not(:last-child) {
     gap: 2.4rem;
   }
 }
+
+@media (max-width: 550px) {
+  /*   .projects-cards {
+    flex-direction: column;
+    gap: 12.8rem;
+    margin-top: 12.8rem;
+  } */
+
+  /*   .service {
+    width: 70%;
+  }
+
+  .tech-boxes-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  } */
+
+  .tech-box {
+    border: 3px solid #1b9cb2;
+    border-radius: 10px;
+    height: 9.6rem;
+    width: 9.6rem;
+  }
+}
