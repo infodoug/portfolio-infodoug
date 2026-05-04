@@ -409,7 +409,7 @@ section:not(:last-child) {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   /*   .projects-cards {
     flex-direction: column;
     gap: 12.8rem;
@@ -430,5 +430,13 @@ section:not(:last-child) {
     border-radius: 10px;
     height: 9.6rem;
     width: 9.6rem;
+  }
+
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+
+  .hero-buttons {
+    margin-bottom: 9.6rem;
   }
 }
